@@ -1,0 +1,10 @@
+#useDynLib(pchc, .registration = TRUE)
+
+importFrom("Rfast", standardise, vmf.mle, rowsums, eachcol.apply)
+importFrom("stats", model.matrix)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+export(.onAttach)
+
+
